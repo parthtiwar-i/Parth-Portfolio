@@ -13,14 +13,14 @@ const Hero = () => {
   const ParallaxRef = useRef(null);
   return (
     <Section
-      className={`pt-[12rem]  -mt-[5.25rem] `}
+      className={`pt-[12rem]  -mt-[5rem] `}
       crosses
       crossesOffset="lg:translate-y-[5.25rem] "
       customPadding
       id={"hero"}
     >
       <div className=" container relative " ref={ParallaxRef}>
-        <div className="relative max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem] ">
+        <div className="relative max-w-[62rem] mx-auto text-center mb-[4rem]   ">
           <h1 className="h1 mb-6">
             Welcome to My Dev World! I'm
             <span className=" inline-block relative bg-gradient-to-r from-blue-900 via-purple-700 to-cyan-400 bg-clip-text text-transparent">
