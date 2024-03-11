@@ -3,7 +3,7 @@ import {
   benefitIcon2,
   benefitIcon3,
   benefitIcon4,
-  benefitImage2,
+  githubBG,
   chromecast,
   disc02,
   discord,
@@ -11,12 +11,11 @@ import {
   facebook,
   figma,
   file02,
+  fiver,
   framer,
   homeSmile,
   instagram,
   notification2,
-  notification3,
-  notification4,
   notion,
   photoshop,
   plusSquare,
@@ -33,8 +32,11 @@ import {
   sliders04,
   telegram,
   twitter,
+  upwork,
   yourlogo,
+  github,
 } from "../assets";
+import Parth from "../assets/Parth.png";
 
 export const navigation = [
   {
@@ -73,9 +75,9 @@ export const navigation = [
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
-export const notificationImages = [notification4, notification3, notification2];
+export const notificationImages = [Parth, notification2, figma];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [Parth, fiver, upwork];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -139,6 +141,14 @@ export const collabContent = [
   {
     id: "1",
     title: "Smart Automation",
+  },
+  {
+    id: "2",
+    title: "Top-notch Security",
+  },
+  {
+    id: "2",
+    title: "Top-notch Security",
   },
   {
     id: "2",
@@ -244,53 +254,20 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Backend Intern @ Connect Link",
+    text: "Worked on Company's Project Scheduler, build backend from scratch , integrating user Auth & made backend logic for scheduling meeting",
     backgroundUrl: "src/assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    iconUrl: github,
+    imageUrl: githubBG,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Building...",
+    text: "Preparing to grab more opportunities....",
     backgroundUrl: "src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
-    light: true,
-  },
-  {
-    id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-    backgroundUrl: "src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
-  },
-  {
-    id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "src/assets/benefits/card-4.svg",
-    iconUrl: benefitIcon4,
-    imageUrl: benefitImage2,
+    imageUrl: githubBG,
     light: true,
-  },
-  {
-    id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "src/assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
-  },
-  {
-    id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "src/assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
   },
 ];
 

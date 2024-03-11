@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import logo from "../assets/newLogo.png";
+import logo from "../assets/MyLogo.jpeg";
 import { navigation } from "../constants";
 import { useLocation } from "react-router";
 import Button from "./Button";
@@ -22,7 +22,6 @@ const Header = () => {
   };
 
   const handelClick = () => {
-
     enablePageScroll();
     setOpenNav(false);
   };
@@ -37,7 +36,7 @@ const Header = () => {
         <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
           <a className="block w-[5rem] xl:mr-8" href="#me">
             <img
-              className="drop-shadow-md"
+              className="drop-shadow-md rounded-full"
               src={logo}
               width={65}
               height={5}

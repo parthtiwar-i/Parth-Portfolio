@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Section from "./Section";
-import { background, curve, heroBackground,working } from "../assets";
+import { background, curve, heroBackground, working } from "../assets";
 import Button from "./Button";
 import { BackgroundCircles, BottomLine, Gradient } from "../design/Hero";
 import { heroIcons } from "../constants/index";
@@ -35,11 +35,12 @@ const Hero = () => {
             </span>
           </h1>
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8  ">
-            Hii I am a full stack web developer and i am actively looking for a
-            great opportunity
+            Elevate your online presence and redefine user experiences with
+            cutting-edge solutions with me. Hey! I'm a full-stack web developer
+            specializing in MERN technology.
           </p>
           <Button href={"#Contact"} color={"white"}>
-            Get Your Design
+            Grab Your Design
           </Button>
         </div>
         <div className="relative max-w-[100rem] mx-auto lg:max-w-6xl xl:mb-24 ">

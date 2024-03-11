@@ -12,7 +12,7 @@ const GithubDetails = () => {
       <div className="container relative z-2 ">
         <Heading
           className=" text-center max-w-md lg:max-w-2xl "
-          title="Wanna contribute! Get the source code here "
+          title="Work Experiences"
         />
         <div className="flex flex-wrap gap-10 mb-10 justify-center ">
           {benefits.map((item, index) => (
@@ -32,7 +32,7 @@ const GithubDetails = () => {
                     alt="project link"
                   />
                   <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider ">
-                    Contribute here
+                    ....
                   </p>
                   <Arrow />
                 </div>

@@ -71,14 +71,22 @@ import benefitIcon2 from "./benefits/icon-2.svg";
 import benefitIcon3 from "./benefits/icon-3.svg";
 import benefitIcon4 from "./benefits/icon-4.svg";
 import benefitImage2 from "./benefits/image-2.png";
+import githubBG from "./benefits/githubBG.svg";
+import github from "./benefits/github.svg";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
+import fiver from "../assets/fiver.svg";
+import upwork from "../assets/upwork.svg";
 
 export {
+  githubBG,
+  github,
+  upwork,
+  fiver,
   brainwave,
   check,
   check2,
