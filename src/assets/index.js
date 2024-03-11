@@ -20,6 +20,7 @@ import chromecast from "./chrome-cast.svg";
 import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpeg";
+import working from "./meWorking.jpg";
 import background1 from "./background-1.jpg";
 import background2 from "./BGImage.jpg";
 
@@ -100,6 +101,7 @@ export {
   sliders04,
   loading,
   background,
+  working,
   background1,
   background2,
   curve,

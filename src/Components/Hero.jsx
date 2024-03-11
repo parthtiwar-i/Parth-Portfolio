@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Section from "./Section";
-import { background, curve, heroBackground } from "../assets";
+import { background, curve, heroBackground,working } from "../assets";
 import Button from "./Button";
 import { BackgroundCircles, BottomLine, Gradient } from "../design/Hero";
 import { heroIcons } from "../constants/index";
@@ -48,9 +48,9 @@ const Hero = () => {
               <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem] " />
               <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490] ">
                 <img
-                  src={background}
+                  src={working}
                   alt="Me"
-                  className=" w-full  md:w-[50%] scale-[1.2] translate-y-8% md:scale-[1.7]  lg:-translate-y-[5%] mx-auto "
+                  className=" w-full  h-[100%] object-cover scale-[1.2] mx-auto "
                   width={1024}
                   height={490}
                 />
