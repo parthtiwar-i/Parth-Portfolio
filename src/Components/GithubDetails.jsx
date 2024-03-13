@@ -1,14 +1,51 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Section from "./Section";
 import Heading from "./Heading";
 import { benefits } from "../constants";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "../design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const GithubDetails = () => {
+  const slideDivLeft = useRef(null);
+  const slideDivRight = useRef(null);
+
+  useEffect(() => {
+    const el1 = slideDivLeft.current;
+    const el2 = slideDivRight.current;
+    gsap.fromTo(
+      el1,
+      { transform: `translateX(200%)`, opacity: `0` },
+      {
+        transform: `translateX(0)`,
+        opacity: 1,
+        duration: 2,
+        ease: "back.inOut",
+        scrollTrigger: {
+          trigger: el1,
+        },
+      }
+    );
+    gsap.fromTo(
+      el2,
+      { transform: `translateX(-200%)`, opacity: `0` },
+      {
+        transform: `translateX(0)`,
+        opacity: 1,
+        duration: 2,
+        ease: "power3.inOut",
+        scrollTrigger: {
+          trigger: el2,
+        },
+      }
+    );
+  }, []);
+
   return (
-    <Section id={"Github"}>
+    <Section id={"works"}>
       <div className="container relative z-2 ">
         <Heading
           className=" text-center max-w-md lg:max-w-2xl "
@@ -17,6 +54,7 @@ const GithubDetails = () => {
         <div className="flex flex-wrap gap-10 mb-10 justify-center ">
           {benefits.map((item, index) => (
             <div
+              ref={index % 2 === 0 ? slideDivLeft : slideDivRight}
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] max-w-[24rem] "
               style={{ backgroundImage: `url(${item.backgroundUrl})` }}
               key={item.id}

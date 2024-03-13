@@ -1,21 +1,42 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Section from "./Section";
-import { collabApps, collabContent} from "../constants";
-import { background, check } from "../assets";
+import { collabApps, collabContent } from "../constants";
+import { background, check, mern } from "../assets";
 import Button from "./Button";
 import { LeftCurve, RightCurve } from "../design/Collaboration";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Arrow from "../assets/svg/Arrow";
+gsap.registerPlugin(ScrollTrigger);
 
 const Skills = () => {
-return (
-    <Section crosses>
-      <div className="container lg:flex ">
+  const rotate = useRef(null);
+
+  useEffect(() => {
+    const el = rotate.current;
+    gsap.fromTo(
+      el,
+      { rotate: 0, translateX: "-11rem" },
+      {
+        rotate: 360,
+        duration: 5,
+        scrollTrigger: {
+          trigger: el,
+        },
+      }
+    );
+  }, []);
+
+  return (
+    <Section crosses id={"skills"}>
+      <div className="container lg:flex lg:-mt-10 ">
         <div className="max-w-[25rem] ">
           <h1 className=" h2 mb-4 md:mb-6 ">My Skill Set </h1>
-          <ul className=" max-w-[22rem] mb-10 md:mb-14 ">
+          <ul className=" max-w-[22rem] mb-10 md:mb-10 ">
             {collabContent.map((item) => (
-              <li className="mb-3 py-3" key={item.id}>
+              <li className="mb-2 py-2" key={item.id}>
                 <div className="flex items-center ">
-                  <img src={check} alt="check" width={24} height={24} />
+                  <img src={item.icon} alt="check" width={24} height={24} />
                   <h6 className="h6 body-2 ml-5 ">{item.title}</h6>
                 </div>
                 {item.text && (
@@ -24,10 +45,10 @@ return (
               </li>
             ))}
           </ul>
-          <Button>Rate My Skills</Button>
+          <Button>Development</Button>
         </div>
         <div className=" lg:ml-auto xl:w-[38rem] ">
-          <p className="body-2 mt-4 m  b-7 text-n-4 md:mb-16 lg:mb-32 lg:w--[22rem] lg:mx-auto ">
+          <p className="body-2 mt-4 mb-7 text-n-4 md:mb-16 lg:mb-32 lg:w--[22rem] lg:mx-auto ">
             These are my skill sets and languages, frameworks, and tools for web
             development and many more with some in progress
           </p>
@@ -36,16 +57,16 @@ return (
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
                   <img
-                    className="rounded-full"
-                    src={background}
+                    className=""
+                    src={mern}
                     alt="me"
-                    width={58}
-                    height={58}
+                    width={60}
+                    height={60}
                   />
                 </div>
               </div>
             </div>
-            <ul>
+            <ul ref={rotate}>
               {collabApps.map((app, index) => (
                 <li
                   key={app.id}

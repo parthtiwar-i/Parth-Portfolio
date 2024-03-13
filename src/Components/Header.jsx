@@ -33,13 +33,12 @@ const Header = () => {
           openNav ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
         }`}
       >
-        <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+        <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-2">
           <a className="block w-[5rem] xl:mr-8" href="#me">
             <img
               className="drop-shadow-md rounded-full"
               src={logo}
-              width={65}
-              height={5}
+              width={50}
               alt="Chilli-Potato"
             />
           </a>

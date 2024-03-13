@@ -23,6 +23,7 @@ import background from "./background.jpeg";
 import working from "./meWorking.jpg";
 import background1 from "./background-1.jpg";
 import background2 from "./BGImage.jpg";
+import mern from "./mern.png";
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
@@ -32,6 +33,25 @@ import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
 import discord from "./collaboration/discord.png";
 import figma from "./collaboration/figma.png";
+import react from "./collaboration/react.svg";
+import express from "./collaboration/express.svg";
+import mongodb from "./collaboration/mongodb.svg";
+import node from "./collaboration/node.svg";
+import javascript from "./collaboration/javascript.svg";
+import html from "./collaboration/html.svg";
+import css from "./collaboration/css.svg";
+import tailwindcss from "./collaboration/tailwindcss.svg";
+import cpp from "./collaboration/cpp.svg";
+import python from "./collaboration/python.svg";
+import ts from "./collaboration/ts.svg";
+import mui from "./collaboration/mui.svg";
+import firebase from "./collaboration/firebase.svg";
+import mongoose from "./collaboration/mongoose.svg";
+import threejs from "./collaboration/threejs.svg";
+import redux from "./collaboration/redux.svg";
+import recoil from "./collaboration/recoil.svg";
+import socket from "./collaboration/socket.svg";
+import postman from "./collaboration/postman.svg";
 import framer from "./collaboration/framer.png";
 import notion from "./collaboration/notion.png";
 import photoshop from "./collaboration/photoshop.png";
@@ -83,6 +103,26 @@ import fiver from "../assets/fiver.svg";
 import upwork from "../assets/upwork.svg";
 
 export {
+  cpp,
+  python,
+  ts,
+  mui,
+  firebase,
+  mongoose,
+  threejs,
+  redux,
+  recoil,
+  socket,
+  postman,
+  mern,
+  react,
+  express,
+  mongodb,
+  node,
+  javascript,
+  html,
+  css,
+  tailwindcss,
   githubBG,
   github,
   upwork,
