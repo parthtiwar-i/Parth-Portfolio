@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "./Section";
 import Heading from "./Heading";
-import { check, service1 } from "../assets";
+import { check, service1, smallSphere, stars } from "../assets";
 import { brainwaveServices } from "../constants";
 import Creating from "./Creating";
 
@@ -9,6 +9,24 @@ const Contact = () => {
   return (
     <Section id={"Contact"}>
       <div className="container ">
+      <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
+        <img
+          src={smallSphere}
+          className="relative z-1"
+          width={255}
+          height={255}
+          alt="Sphere"
+        />
+        <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+          <img
+            src={stars}
+            className="w-full"
+            width={950}
+            height={400}
+            alt="Stars"
+          />
+        </div>
+      </div>
         <Heading title={"Wanna discuss something Great!  Let's Connect"} />
         <div className="relative">
           <div className="relative z-1 flex justify-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]  ">
@@ -45,6 +63,7 @@ const Contact = () => {
             />
           </div>
         </div>
+        
       </div>
     </Section>
   );

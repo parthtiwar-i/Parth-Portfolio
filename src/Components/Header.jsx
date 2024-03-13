@@ -69,12 +69,12 @@ const Header = () => {
           </nav>
 
           <a
-            href="signUp"
+            href="https://www.linkedin.com/in/parth-tiwari-9020721a7/"
             className="button hidden mr-8 text-n-1/50 transition-colors lg:text-n-1 lg:block lg:text-base "
           >
             Hire ME
           </a>
-          <Button className={"hidden lg:flex lg:text-base"} href={"#login"}>
+          <Button className={"hidden lg:flex lg:text-base"} href={"#Contact"}>
             Buy Me a Coffee
           </Button>
           <Button

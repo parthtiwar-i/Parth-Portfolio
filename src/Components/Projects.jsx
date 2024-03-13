@@ -2,16 +2,17 @@ import Tagline from "../design/Tagline";
 import { roadmap } from "../constants";
 import Section from "./Section";
 import Heading from "./Heading";
-import { check2, grid, loading1 } from "../assets";
+import { check2, grid, loading1, smallSphere, stars } from "../assets";
 import Button from "./Button";
 import { Gradient } from "../design/Roadmap";
 import { ScrollParallax } from "react-just-parallax";
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 const Projects = () => (
   <Section className="overflow-hidden" id="Projects">
     <div className="container md:pb-10">
-      <Heading tag="See few of my cool work" title="Projects" />
+      <Heading tag="See few of my cool Projects" title="Projects" />
 
       <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
         {roadmap.map((item, index) => {
@@ -37,7 +38,7 @@ const Projects = () => (
                   <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
                     <Tagline>{item.date}</Tagline>
 
-                    <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
+                    <div className="flex items-center px-4  bg-n-1 rounded text-n-8">
                       <img
                         className="mr-2.5"
                         src={item.status === "done" ? check2 : loading1}
@@ -49,16 +50,18 @@ const Projects = () => (
                     </div>
                   </div>
 
-                  <div className="mb-10 -my-10 -mx-15">
+                  <div className=" mb-5 -my-10">
                     <img
-                      className="w-full"
+                      className="w-5/6"
                       src={item.imageUrl}
-                      width={628}
-                      height={426}
+                      width={400}
+                      height={300}
                       alt={item.title}
                     />
                   </div>
-                  <h4 className="h4 mb-4">{item.title}</h4>
+                  <Link to={item.to && item.to} >
+                    <h4 className="h4 mb-4 border-b-2 border-n-10 w-fit">{item.title}</h4>
+                  </Link>
                   <p className="body-2 text-n-4">{item.text}</p>
                 </div>
               </div>
@@ -69,7 +72,7 @@ const Projects = () => (
       </div>
 
       <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-        <Button href="https://github.com/parthtiwar-i">My Projects</Button>
+        <Button href="https://github.com/parthtiwar-i">More Projects</Button>
       </div>
     </div>
   </Section>
