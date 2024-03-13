@@ -95,7 +95,7 @@ import githubBG from "./benefits/githubBG.svg";
 import github from "./benefits/github.svg";
 
 import discordBlack from "./socials/discord.svg";
-import facebook from "./socials/facebook.svg";
+import linkedin from "./socials/linkedin.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
@@ -194,7 +194,7 @@ export {
   benefitIcon4,
   benefitImage2,
   discordBlack,
-  facebook,
+  linkedin,
   instagram,
   telegram,
   twitter,

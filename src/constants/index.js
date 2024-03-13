@@ -8,7 +8,6 @@ import {
   disc02,
   discord,
   discordBlack,
-  facebook,
   figma,
   file02,
   fiver,
@@ -51,6 +50,7 @@ import {
   socket,
   threejs,
   firebase,
+  linkedin,
 } from "../assets";
 import Parth from "../assets/Parth.png";
 
@@ -318,30 +318,24 @@ export const socials = [
     id: "0",
     title: "Discord",
     iconUrl: discordBlack,
-    url: "#",
+    url: "https://discordapp.com/users/jarvi_s_",
   },
   {
     id: "1",
     title: "Twitter",
     iconUrl: twitter,
-    url: "#",
+    url: "https://twitter.com/parthtiwar_i",
   },
   {
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
+    url: "https://www.instagram.com/parthtiwar_i/",
   },
   {
     id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
+    title: "inkedIn",
+    iconUrl: linkedin,
+    url: "https://www.linkedin.com/in/parth-tiwari-9020721a7/",
   },
 ];
