@@ -122,7 +122,7 @@ export const roadmap = [
   },
   {
     id: "1",
-    title: "Real State Project",
+    title: "Real Estate Project",
     text: "Currently developing a real estate app for rental management and property listings. Features include automated rent reminders for owners and property browsing for users.",
     date: "May 2023",
     status: "progress",

@@ -39,20 +39,49 @@ const Contact = () => {
                 alt="Buy It"
               />
             </div>
-            <div className="relative z-1 max-w-[17rem] ml-auto my-auto ">
-              <h4 className="h4 mb-4 ">Contact Me</h4>
+            <div className="relative z-1 max-w-[18rem] ml-auto my-auto ">
+              <h4 className="h4 mb-4 ">Get In Touch</h4>
               <p className="body-2 mb-[3rem] text-n-3 ">
                 Got an idea! lets connect and work on it together and make the
                 imagination alive
               </p>
-              <ul className="body-2">
+              <ul className="body-2  ">
                 <li className="flex items-start py-4 border-t border-n-6 ">
                   <img src={check} alt="" width={24} height={24} />
                   <p className="ml-4  ">
-                    Mail Me at <a href={`mailto:tiwariparth02@gmail.com`} className="text-n-2" >tiwariparth02@gmail.com</a>
+                    Mail Me at{" "}
+                    <a
+                      href={`mailto:tiwariparth02@gmail.com`}
+                      className="text-n-2"
+                    >
+                      tiwariparth02@gmail.com
+                    </a>
                   </p>
                 </li>
               </ul>
+              <div className="body-2">
+                <input
+                  disabled
+                  type="text"
+                  className="bg-transparent border-b-[1px] focus:outline-none  border-n-5 p-3 rounded-sm  "
+                  placeholder="Your Name"
+                />
+                <input
+                  disabled
+                  type="email"
+                  placeholder="email@gmail.com"
+                  className="bg-transparent border-b-[1px] focus:outline-none  border-n-5 p-3 rounded-sm  "
+                />
+                <textarea
+                  disabled
+                  placeholder="Your Query"
+                  name=""
+                  id=""
+                  cols="20"
+                  rows="1"
+                  className="bg-transparent border-b-[1px] focus:outline-none  border-n-5 p-3 rounded-sm  "
+                />
+              </div>
             </div>
             <Creating
               title={"Let's Create Together"}
