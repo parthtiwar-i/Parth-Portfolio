@@ -1,12 +1,10 @@
 import Tagline from "../design/Tagline";
-import { roadmap } from "../constants";
+import { projects } from "../constants";
 import Section from "./Section";
 import Heading from "./Heading";
 import { check2, grid, loading1, smallSphere, stars } from "../assets";
 import Button from "./Button";
 import { Gradient } from "../design/Roadmap";
-import { ScrollParallax } from "react-just-parallax";
-import { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 const Projects = () => (
@@ -15,7 +13,7 @@ const Projects = () => (
       <Heading tag="See few of my cool Projects" title="Projects" />
 
       <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
-        {roadmap.map((item, index) => {
+        {projects.map((item, index) => {
           const status = item.status === "done" ? "Done" : "In progress";
           return (
             <div
@@ -59,8 +57,10 @@ const Projects = () => (
                       alt={item.title}
                     />
                   </div>
-                  <Link to={item.to && item.to} >
-                    <h4 className="h4 mb-4 border-b-2 border-n-10 w-fit">{item.title}</h4>
+                  <Link to={item.to && item.to}>
+                    <h4 className="h4 mb-4 border-b-2 border-n-10 w-fit">
+                      {item.title}
+                    </h4>
                   </Link>
                   <p className="body-2 text-n-4">{item.text}</p>
                 </div>

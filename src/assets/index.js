@@ -72,7 +72,7 @@ import hero from "./roadmap/hero.png";
 import roadmap1 from "./roadmap/image-1.svg";
 import roadmap2 from "./roadmap/image-2.svg";
 import roadmap3 from "./roadmap/image-3.png";
-import roadmap4 from "./roadmap/image-4.png";
+import roadmap4 from "./roadmap/image-4.jpg";
 import undone from "./roadmap/undone.svg";
 
 import notification1 from "./notification/image-1.png";

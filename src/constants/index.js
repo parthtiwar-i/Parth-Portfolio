@@ -109,7 +109,7 @@ export const brainwaveServicesIcons = [
   sliders04,
 ];
 
-export const roadmap = [
+export const projects = [
   {
     id: "0",
     title: "Buy-It",
@@ -130,20 +130,21 @@ export const roadmap = [
   },
   {
     id: "2",
+    title: "Query PDF",
+    text: "I engineered a Retrieval Augmented Generation (RAG) application using Langchain with FastAPI for the backend in Python, and React for the frontend. Leveraging FAISS for efficient vector data management and Recoil for state management, the platform seamlessly integrates with the Gemini API for Large Language Models (LLM) integration. Users can upload PDFs and generate tailored questions, streamlining information retrieval.",
+    date: "march 2024",
+    status: "done",
+    imageUrl: roadmap4,
+    to: "https://pdf-query-olive.vercel.app/",
+  },
+  {
+    id: "3",
     title: "Chocoffee",
     text: "Chocoffee project entails the development of a fully operational frontend website catering to a coffee cafe. This comprehensive platform provides an immersive user experience by elegantly presenting menu offerings, ambiance, and facilitates seamless online reservations.",
     date: "May 2023",
     status: "done",
     imageUrl: roadmap3,
-    to:"https://cho-coffee.vercel.app/"
-  },
-  {
-    id: "3",
-    title: "Explore More",
-    text: "Many More Back-End and Front-End Projects ",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap4,
+    to: "https://cho-coffee.vercel.app/",
   },
 ];
 
