@@ -298,13 +298,21 @@ export const benefits = [
   {
     id: "0",
     title: "Backend Intern @ Connect Link",
-    text: "Worked on Company's Project Scheduler, build backend from scratch , integrating user Auth & made backend logic for scheduling meeting",
+    text: " (Jan 2024 - March 2024 ) Worked on Company's Project Scheduler, build backend from scratch , integrating user Auth & made backend logic for scheduling meeting",
     backgroundUrl: "src/assets/benefits/card-1.svg",
     iconUrl: github,
     imageUrl: githubBG,
   },
   {
     id: "1",
+    title: "ReactJs intern @ Laxaar",
+    text: "May 2024 - Present",
+    backgroundUrl: "src/assets/benefits/card-1.svg",
+    iconUrl: github,
+    imageUrl: githubBG,
+  },
+  {
+    id: "2",
     title: "Building...",
     text: "Preparing to grab more opportunities....",
     backgroundUrl: "src/assets/benefits/card-2.svg",
