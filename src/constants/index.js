@@ -51,6 +51,7 @@ import {
   threejs,
   firebase,
   linkedin,
+  writeBlog,
 } from "../assets";
 import Parth from "../assets/Parth.png";
 
@@ -122,20 +123,21 @@ export const projects = [
   },
   {
     id: "1",
-    title: "Real Estate Project",
-    text: "Currently developing a real estate app for rental management and property listings. Features include automated rent reminders for owners and property browsing for users.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap2,
-  },
-  {
-    id: "2",
     title: "Query PDF",
     text: "I engineered a Retrieval Augmented Generation (RAG) application using Langchain with FastAPI for the backend in Python, and React for the frontend. Leveraging FAISS for efficient vector data management and Recoil for state management, the platform seamlessly integrates with the Gemini API for Large Language Models (LLM) integration. Users can upload PDFs and generate tailored questions, streamlining information retrieval.",
     date: "march 2024",
     status: "done",
     imageUrl: roadmap4,
     to: "https://pdf-query-olive.vercel.app/",
+  },
+  {
+    id: "2",
+    title: "Thoughts",
+    text: "Built a modern blog platform using React, TypeScript, Tailwind, and Framer Motion for a dynamic UI, with Cloudflare Hono, AWS S3, PostgreSQL, and Prisma powering a scalable backend. Users can create, read, and share blogs seamlessly.",
+    date: "dec 2024",
+    status: "done",
+    imageUrl: writeBlog,
+    to: "https://thoughts-orcin.vercel.app/",
   },
   {
     id: "3",
@@ -258,67 +260,30 @@ export const collabApps = [
   },
 ];
 
-export const pricing = [
-  {
-    id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-  {
-    id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
-  },
-  {
-    id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-];
-
 export const benefits = [
   {
     id: "0",
     title: "Backend Intern @ Connect Link",
-    text: " (Jan 2024 - March 2024 ) Worked on Company's Project Scheduler, build backend from scratch , integrating user Auth & made backend logic for scheduling meeting",
+    text: " (Jan 2024 - March 2024 ) Created a backend system using Node.js, Express.js, and MongoDB for a meeting platform. Developed an innovativescheduling feature that streamlined meeting link generation, reducing setup time by 40% and increasing user satisfaction ratings by 25%.",
     backgroundUrl: "src/assets/benefits/card-1.svg",
     iconUrl: github,
     imageUrl: githubBG,
   },
   {
     id: "1",
-    title: "ReactJs intern @ Laxaar",
-    text: "May 2024 - Present",
+    title: "ReactJs Intern @ Laxaar",
+    text: `(May 2024 - Nov) Optimized role-based access, improved API performance by 30%, and reduced data fetch time by 40% in a stock analysis app. Built a scalable MVP template system, automated Vercel deployments, optimized CI/CD pipelines, and contributed to core enterprise features with SOLID principles.`,
     backgroundUrl: "src/assets/benefits/card-1.svg",
     iconUrl: github,
     imageUrl: githubBG,
   },
   {
     id: "2",
-    title: "Building...",
-    text: "Preparing to grab more opportunities....",
-    backgroundUrl: "src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon3,
+    title: "Fullstack Developer @ Laxaar",
+    text: "(May 2024 - Present) Building a website builder",
+    backgroundUrl: "src/assets/benefits/card-1.svg",
+    iconUrl: github,
     imageUrl: githubBG,
-    light: true,
   },
 ];
 

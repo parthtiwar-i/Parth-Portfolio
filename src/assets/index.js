@@ -101,8 +101,10 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 import fiver from "../assets/fiver.svg";
 import upwork from "../assets/upwork.svg";
+import writeBlog from "../assets/writeBlog.jpg";
 
 export {
+  writeBlog,
   cpp,
   python,
   ts,
